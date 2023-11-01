@@ -16,7 +16,7 @@ mycursor = mydb.cursor()
 # for database in mycursor:
 #     print(database)
 """table creating"""
-# mycursor.execute("create table customers (id int AUTO_INCREMENT primary key, name varchar(255),address varchar(255))")
+mycursor.execute("create table customers (id int AUTO_INCREMENT primary key, name varchar(255),address varchar(255))")
 """table showing/seeing"""
 # mycursor.execute("show tables")
 # for table in mycursor:
