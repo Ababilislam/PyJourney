@@ -12,7 +12,7 @@ mycursor = mydb.cursor()
 # for i in mycursor:
 #     print(i)
 
-# sql_query = "select * from customers limit 5 offset 3"
+sql_query = "select * from customers limit 5 offset 3"
 # adr = ("Yellow garden 2",)
 # mycursor.execute(sql_query,adr)
 mycursor.execute(sql_query)
