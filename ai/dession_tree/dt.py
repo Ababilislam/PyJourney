@@ -1,5 +1,6 @@
 import sys
 import matplotlib
+
 matplotlib.use('Agg')
 
 import pandas
@@ -24,7 +25,7 @@ dtree = dtree.fit(X, y)
 
 tree.plot_tree(dtree, feature_names=features)
 
-#Two  lines to make our compiler able to draw:
+# Two  lines to make our compiler able to draw:
 plt.savefig("test.jpg")
 sys.stdout.flush()
 
