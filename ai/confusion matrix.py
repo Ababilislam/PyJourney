@@ -2,12 +2,14 @@ import matplotlib.pyplot as plt
 import numpy
 from sklearn import metrics
 
-actual = numpy.random.binomial(1,.9,size = 100)
+actual = numpy.random.binomial(1,.9,size = 10)
 predicted = numpy.random.binomial(1,.9,size = 100)
 
-confusion_matrix = metrics.confusion_matrix(actual, predicted)
+print(actual)
 
-cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [False, True])
-
-cm_display.plot()
-plt.show()
+# confusion_matrix = metrics.confusion_matrix(actual, predicted)
+#
+# cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [False, True])
+#
+# cm_display.plot()
+# plt.show()
