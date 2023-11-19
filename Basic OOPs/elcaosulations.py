@@ -14,6 +14,6 @@ computer1.sell()
 
 computer1.__maxprice = 100
 computer1.sell()
-
+# print(computer1.__maxprice)
 computer1.setMaxprice(100)
 computer1.sell()
