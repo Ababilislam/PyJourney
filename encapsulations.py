@@ -17,6 +17,7 @@ class Derived(Base):
         print("Calling protected member of base class: ",
               self._a)
 
+
         # Modify the protected variable:
         self._a = 3
         print("Calling modified protected member outside class: ",
