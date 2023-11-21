@@ -11,6 +11,7 @@ class Celcius:
         print("getting vlaue")
         return self._temperature
 
+
     @temperature.setter
     def temperature(self,value):
         print("setting value")
@@ -22,7 +23,7 @@ class Celcius:
 human =Celcius(37)
 
 print(human.temperature)
-print("boo")
-print(human.to_furenhite())
-# human.temperature=-300
-print(human.to_furenhite())
+# print("boo")
+# print(human.to_furenhite())
+# # human.temperature=-300
+# print(human.to_furenhite())
