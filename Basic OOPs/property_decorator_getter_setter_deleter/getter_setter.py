@@ -6,25 +6,23 @@ class Celcius:
     def to_furenhite(self):
         return (self.temperature*1.8)+32
 
-    #getter
-    def get_temperature(self):
-        print("getting value")
+    @property
+    def temperature(self):
+        print("getting vlaue")
         return self._temperature
 
-    #setter
-    def set_temperature(self, value):
-        print("setting vlaue")
-        if value < -273.15:
-            raise ValueError("temperature blew  negetive 273 is not possible")
-        self._temperature = value
-
-
-    temperature = property(get_temperature,set_temperature)
+    @temperature.setter
+    def temperature(self,value):
+        print("setting value")
+        if value<-273.15:
+            raise ValueError("Temp is blew absulute zero. try with valid temperature.")
+        self._temperature =value
 
 
 human =Celcius(37)
 
 print(human.temperature)
+print("boo")
 print(human.to_furenhite())
-human.temperature=-300
+# human.temperature=-300
 print(human.to_furenhite())
