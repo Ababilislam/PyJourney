@@ -111,4 +111,8 @@ from pathlib import Path
 
 # for multiple dir using os
 # os.makedirs('2023/11/21')
-print(os.listdir())
+# print(os.listdir())
+
+for file_name in os.listdir(os.getcwd()):
+    if file_name.endswith(".txt"):
+        print(file_name)
