@@ -135,3 +135,22 @@ import fnmatch
 #     for file_name in file:
 #         print(file_name)
 
+# data = '/home/ab/Documents/git/PyJourney/File Handling/dir_name/'
+#
+# if os.path.isfile(data):
+#     os.remove(data)
+#     print("reamove successfull")
+# else:
+#     print(f"Error: {data} not a valid file name or not exists")
+
+
+# data = '/home/ab/Documents/git/PyJourney/File Handling/dir_name/tex.txt'
+# da= open(data,'w')
+# data = '/home/ab/Documents/git/PyJourney/File Handling/dir_name/tex.txt'
+#
+# try:
+#     os.remove(data)
+#     print("file remove successfully")
+# except OSError as e:
+#     print(f"Error: {data} : {e.strerror}")
+
