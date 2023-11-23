@@ -113,6 +113,14 @@ from pathlib import Path
 # os.makedirs('2023/11/21')
 # print(os.listdir())
 
-for file_name in os.listdir(os.getcwd()):
-    if file_name.endswith(".txt"):
-        print(file_name)
+# for file_name in os.listdir(os.getcwd()):
+#     if file_name.endswith(".txt"):
+#         print(file_name)
+
+########### specific file search
+
+import fnmatch
+
+for file in os.listdir(os.getcwd()):
+    if fnmatch.fnmatch(file, '*.txt'):
+        print(file)
