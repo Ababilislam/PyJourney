@@ -121,6 +121,17 @@ from pathlib import Path
 
 import fnmatch
 
-for file in os.listdir(os.getcwd()):
-    if fnmatch.fnmatch(file, '*.txt'):
-        print(file)
+# for file in os.listdir(os.getcwd()):
+#     if fnmatch.fnmatch(file, '*.txt'):
+#         print(file)
+
+########## file search using glob
+# import glob
+# print(glob.glob('*.py'))
+
+###### traversing directory (topdown) true= first file false= frist directory
+# for dir_path, dir_name,file in os.walk(".",topdown=True):
+#     print(f"Found directory: {dir_path}")
+#     for file_name in file:
+#         print(file_name)
+
