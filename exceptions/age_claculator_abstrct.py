@@ -8,6 +8,7 @@ class Person(ABC):
         self.name = name
         self.dob = dob
 
+    @abstractmethod
     def age(self):
         """abstruct methode"""
         pass
