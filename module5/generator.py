@@ -46,3 +46,7 @@ def first_n(n):
 
 sum_of_first_n = sum(first_n(100))
 print(sum_of_first_n)
+
+
+
+
