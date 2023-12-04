@@ -1,7 +1,7 @@
 import re
 
 pattern = '^a...s$'
-test_string = 'abyss'
+test_string = 'abyxs'
 result = re.match(pattern, test_string)
 
 if result:
